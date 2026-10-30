@@ -1,4 +1,4 @@
-package ru.monyamau.task_tracker_email_sender.infrastructure;
+package ru.monyamau.task_tracker_email_sender.broker;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
