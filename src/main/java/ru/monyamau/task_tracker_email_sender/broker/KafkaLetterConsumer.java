@@ -15,7 +15,7 @@ public class KafkaLetterConsumer {
         this.emailService = emailService;
     }
 
-    @KafkaListener(topics = "${kafka.topic}")
+    @KafkaListener(topics = "${kafka.topics.mailing}")
     public void consume(LetterMessageDto messageDto) {
         log.info("Успешно получена задача на отправку письма для {}", messageDto.recipient());
         emailService.sendLetter(messageDto);
